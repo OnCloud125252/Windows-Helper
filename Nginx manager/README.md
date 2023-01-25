@@ -1,27 +1,25 @@
 # Nginx manager for Windows
-This is a CLI tool for managing Nginx on Windows.  
-With this manager, you can easily start/reloadp/stop Nginx using simple command.  
-Also, this manager can prevent running multiple Nginx processes at the same time.  
-Running multiple Nginx processes at the same time might cause Nginx not work properly.  
+This CLI tool simplifies the management of Nginx on Windows.  
+You can easily start, reload, and stop Nginx using simple commands.  
+Additionally, this manager prevents the simultaneous running of multiple Nginx processes, which can cause Nginx to malfunction.
 
 # Installation
-## 1. Create folder for custom command
-Create a folder any where on your device, add the folder's path to enviroment variable, then restart your device.  
-For example, I create a folder `C:\custom-commands`, then add `C:\custom-commands` to `PATH` variable.
+## 1. Create a folder for custom commands
+Create a folder anywhere on your device, add the folder's path to the `PATH` variable, and then restart your device.  
+For example, create a folder `C:\custom-commands`, then add `C:\custom-commands` to the `PATH` variable.
 
-## 2. Download required file
-Download the latest version of Nginx manager on the release page or using the following link.
+## 2. Download the required file
+Download the latest version of the Nginx manager from the release page or use the following link:
 
-- Latest version
+- [Latest version](https://github.com/OnCloud125252/Windows-Helper/releases/latest)
 
-After that, move the file to the folder you just created.  
+After downloading, move the file to the folder you created in step 1.
 
-> Warning:  
-> The file should be named `nginx.bat`, otherwise the cmmand wont work.
+> Warning:
+> The file must be named `nginx.bat`, otherwise the command will not work.
 
 ## 4. Configuration
-
-Use any text editor to open the file, find the configuration section:  
+Use any text editor to open the `nginx.bat` file and locate the configuration section:
 ```bat
 ::: Command Config
 :: Path of Nginx *required*
@@ -32,12 +30,12 @@ SET editor_name=code-insiders
 SET editor_options=-w
 ::: END
 ```
-- `nginx_Dir` ***required***  
-Must be the folder that contains `nginx.exe`.
-- `editor_name` ***required***  
-Enter the name of the editor you preferred, it will be used to open the config file.
-- `editor_options` ***optional***  
-The option for the editor when opening the config file.
+- `nginx_Dir` is ***required***  
+It must be the folder that contains `nginx.exe`.
+- `editor_name` is ***required***  
+Enter the name of your preferred editor, it will be used to open the config file.
+- `editor_options` is ***optional***  
+Enter any options you want to pass to the editor when opening the config file.
 
 # Usage
 Basic command usage:
@@ -49,19 +47,19 @@ nginx [option]
 Display a list of all avliable commands.
 
 - `start`  
-Start Nginx service.
+Start the Nginx service.
 
 - `config`  
-Open the configuration file using editor you preferred.
+Open the configuration file using your preferred editor.
 
 - `reload`  
-Reload the Nginx service with latest config file.
+Reload the Nginx service with the latest config file.
 
 - `stop`  
-Fast shutdown Nginx.
+Perform a fast shutdown of Nginx.
 
 - `quit`  
-Shutdown Nginx gracefully.
+Shut down Nginx gracefully.
 
 - `clear`  
-Exit all current running Nginx processes.
+Exit all currently running Nginx processes.
