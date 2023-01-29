@@ -44,22 +44,37 @@ nginx [option]
 ```
 ## Options
 - `help`  
-Display a list of all avliable commands.
+Display a list of all avliable commands.  
+![](https://i.ibb.co/jvD1Sp2/image.png)
 
 - `start`  
-Start the Nginx service.
+Start the Nginx service.  
+![](https://i.ibb.co/3BY5j6d/image.png)
 
 - `config`  
-Open the configuration file using your preferred editor.
+Open the configuration file using your preferred editor.  
+![](https://i.ibb.co/L96P70W/image.png)
 
 - `reload`  
-Reload the Nginx service with the latest config file.
+Reload the Nginx service with the latest config file.  
+![](https://i.ibb.co/hDk6j2L/image.png)
 
 - `stop`  
-Perform a fast shutdown of Nginx.
+Perform a fast shutdown of Nginx.  
+![](https://i.ibb.co/R2hZ0qc/image.png)
 
 - `quit`  
-Shut down Nginx gracefully.
+Shut down Nginx gracefully.  
+![](https://i.ibb.co/B4STmFx/image.png)
+
 
 - `clear`  
-Exit all currently running Nginx processes.
+Exit all currently running Nginx processes.  
+![](https://i.ibb.co/6mzt7Pm/image.png)
+
+# Screenshots
+### Provide smarter output
+![](https://i.ibb.co/J7LJq0m/image.png)
+
+### Works on both Command Prompt and Powershell
+![](https://i.ibb.co/CWKfK1h/image.png)

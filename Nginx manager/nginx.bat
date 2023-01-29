@@ -64,21 +64,21 @@ GOTO quit
 
 ::: Commands
 :cmdHelp &:: Help
-ECHO.
+ECHO:
 ECHO +------------------------------------------------------------+
-ECHO.       This is a CLI tool for managing Nginx on Windows
+ECHO:       This is a CLI tool for managing Nginx on Windows
 ECHO +------------------------------------------------------------+
-ECHO.   OPTION   ^>  DESCRIPTION
+ECHO:   OPTION   ^>  DESCRIPTION
 ECHO +------------------------------------------------------------+
-ECHO.   help     ^>  Display a list of command.
-ECHO.   start    ^>  Start the Nginx service.
-ECHO.   config   ^>  Open the config file using %editor_name%.
-ECHO.   reload   ^>  Reload Nginx with the latest config file.
-ECHO.   stop     ^>  Perform a fast shutdown of Nginx.
-ECHO.   quit     ^>  Perform a graceful shutdown of Nginx.
-ECHO.   clear    ^>  Exit all currently running Nginx processes.
+ECHO:   help     ^>  Display a list of command.
+ECHO:   start    ^>  Start the Nginx service.
+ECHO:   config   ^>  Open the config file using %editor_name%.
+ECHO:   reload   ^>  Reload Nginx with the latest config file.
+ECHO:   stop     ^>  Perform a fast shutdown of Nginx.
+ECHO:   quit     ^>  Perform a graceful shutdown of Nginx.
+ECHO:   clear    ^>  Exit all currently running Nginx processes.
 ECHO +------------------------------------------------------------+
-ECHO.
+ECHO:
 GOTO quit
 
 :cmd1 &:: Start
